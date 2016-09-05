@@ -1,0 +1,286 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {height: 100%;}
+
+}
+ol, ul {list-style: none;}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+a, a:hover {text-decoration: none;}
+
+body {	
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: 'Open Sans', sans-serif;	
+	overflow-x: hidden;
+}
+.hidden {
+	display: none;
+}
+.wrapper{
+	width: 100%;
+	position: relative;
+}
+
+/*----------Header----------*/
+.header_container{
+	position: relative;	
+	background:   url(../img/background_header.png) 0 0 no-repeat ;
+	color: #fff;	
+}
+.background_container{	
+	position: relative;
+	background:  #3b434c;
+	opacity: 0.9;
+	padding: 11% 0 11%;	
+}
+h1{
+	margin-bottom: 1%;
+	color: #fff;
+	font-size: 4.375em;
+	font-weight: 700;
+	line-height: 1.063em;
+	text-align: center;	
+}
+.h4{	
+	color: #fff;
+	font-size: 1.56em;
+	font-weight: 400;
+	line-height: 2.5em;
+	text-align: center;
+}
+.things{	
+	color: #f7600e;
+}
+.button_container{
+	position: relative;    
+	left: 38%;
+	margin-top: 2%;
+}
+.button_container button a{
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 2.5em;	
+	color: #fff;
+}
+.button_container button a  {
+	padding: 20px 75px;
+	background-color: transparent;
+	border: none;	
+	overflow: hidden;
+}
+.button_container button{
+	background-color: transparent;	
+	border: none;
+}
+.button_container button a:hover{
+	background-color: #f7600e;
+	border-radius:  10px;
+	cursor: pointer;
+}
+menu{
+	position: absolute;
+    top: 7%;
+    right: 14%;
+	color: #fff;
+}
+menu a{
+	color: #d1d2d4;
+	font-size: 1em;
+	font-weight: 400;
+	line-height:  1.063em;
+}
+menu a:hover{
+	color: #f7600e;
+}
+.b_arrow{
+	position: absolute;
+	bottom: 4%;
+	left: 50%;
+}
+.fa-chevron-right{
+	transform: rotate(90deg);
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 50%; 
+	padding: 14px;
+}
+/*----------/Header----------*/
+/*----------section----------*/
+.service{
+	padding: 8% 0;
+}
+.service li{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+.li_anchor svg{
+	fill: #f7600e;
+}
+.li_anchor svg:hover{
+	fill: #000;
+}
+.sect_item h3{
+	margin-top: 5%;
+	text-align: center;
+	overflow: hidden;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 2.5em;
+}
+.li_anchor h3:active{
+	color: #000;
+}
+.li_anchor:active h3{
+	color: #000;
+}
+.service p{
+	color: #3b434c;
+	font-size: 0.875em;
+	line-height: 400;
+	line-height: 1.625em;	
+}
+
+.sect_flex_container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+
+}
+.sect_flex_block{
+	display: flex;	
+}
+
+
+/*----------/section----------*/
+
+/*----------Section Email----------*/
+.email_section{
+	background: url(../img/emailbg.png) 0  0 no-repeat ;
+}
+.email_wrapper{
+	background:  #3b434c;
+	opacity: 0.9;
+	text-align: center;
+	padding: 4% 0;
+}
+.email_wrapper form input[placeholder]{
+	border: none;
+	padding: 0 14% 0 2%;
+	border-radius: 8px;
+	color: #3b434c;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 40px;
+}
+
+.email_wrapper button{
+	border: none;
+	border-radius:  10px;
+	margin-left: 2%;
+	padding: 0 50px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 40px;
+	background-color: #f7600e;
+	color: #fff;	
+}
+
+/*----------/Section Email----------*/
+/*----------Section Portfolio----------*/
+.portfolio{
+	padding: 5% 0;	
+	text-align: center;
+}
+.portfolio h2{
+	color: #3b434c;
+	font-size: 2.188em;
+	font-weight: 600;
+	line-height: 2.5em;
+}
+.dao_width{
+	width:20%;
+	margin-left: 40%;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.875em;
+	color: #3b434c;
+}
+.portf_flex_container{display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+
+}
+
+
+
+.portf_flex_container div{
+	border: 5px solid ;
+	background-color: cornflowerblue;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+}
+
+.portf_flex_item1:{background: url(../img/our-works1.png);
+		
+}
+.portf_flex_item2:{background: url(../img/our-works2.png);
+}
+.portf_flex_item3:{background: url(../img/our-works3.png);
+}
+.portf_flex_item4:{background: url(../img/our-works4.png);
+}
+.portf_flex_item5:{background: url(../img/our-works5.png);
+}
+.portf_flex_item6:{background: url(../img/our-works6.png);
+}
+
+
+	/*----------/Section Portfolio----------*/
+
+	/*----------Header----------*/
+
+
+	/*---------- ----------*/
