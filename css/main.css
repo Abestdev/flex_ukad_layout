@@ -21,7 +21,7 @@ time, mark, audio, video {
 html {height: 100%;}
 
 }
-ol, ul {list-style: none;}
+ol, ul  {list-style: none;}
 
 * {
 	margin: 0;
@@ -51,6 +51,8 @@ body {
 .header_container{
 	position: relative;	
 	background:   url(../img/background_header.png) 0 0 no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
 	color: #fff;	
 }
 .background_container{	
@@ -105,8 +107,8 @@ h1{
 }
 menu{
 	position: absolute;
-    top: 7%;
-    right: 14%;
+	top: 7%;
+	right: 14%;
 	color: #fff;
 }
 menu a{
@@ -117,6 +119,23 @@ menu a{
 }
 menu a:hover{
 	color: #f7600e;
+}
+menu:hover{
+	position: absolute;
+	top: 7%;
+	right: 11%;
+	color: #fff;
+}
+menu:hover .dropDownMenu{
+	/*visibility: visible;*/
+	display: block;
+}
+.dropDownMenu{
+	/*visibility: hidden;*/
+	display: none;
+}
+.dropDownMenu ul li{
+	list-style: none;
 }
 .b_arrow{
 	position: absolute;
@@ -140,10 +159,10 @@ menu a:hover{
 	vertical-align: middle;
 	text-align: center;
 }
-.li_anchor svg{
+.service_li_anchor svg{
 	fill: #f7600e;
 }
-.li_anchor svg:hover{
+.service_li_anchor svg:hover{
 	fill: #000;
 }
 .sect_item h3{
@@ -154,10 +173,10 @@ menu a:hover{
 	font-weight: 600;
 	line-height: 2.5em;
 }
-.li_anchor h3:active{
+.service_li_anchor h3:active{
 	color: #000;
 }
-.li_anchor:active h3{
+.service_li_anchor:active h3{
 	color: #000;
 }
 .service p{
@@ -173,22 +192,20 @@ menu a:hover{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	-ms-align-items: center;
-	align-items: center;
-
+	
 }
 .sect_flex_block{
-	display: flex;	
+	
 }
-
-
 /*----------/section----------*/
 
 /*----------Section Email----------*/
 .email_section{
 	background: url(../img/emailbg.png) 0  0 no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 .email_wrapper{
 	background:  #3b434c;
@@ -232,8 +249,8 @@ menu a:hover{
 	line-height: 2.5em;
 }
 .dao_width{
-	width:20%;
-	margin-left: 40%;
+	width: 26%;
+	margin-left: 38%;
 	text-align: center;
 	font-size: 1em;
 	font-weight: 400;
@@ -247,40 +264,76 @@ menu a:hover{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	align-content: space-around;
-
+	margin: 5% auto;
 }
-
-
-
 .portf_flex_container div{
-	border: 5px solid ;
-	background-color: cornflowerblue;
-    width: 75px;
-    height: 75px;
-    margin: auto;
+	margin: 2%;    
+	width: 361px;
+	height: 361px;
+	border-radius: 10px;	
 }
 
-.portf_flex_item1:{background: url(../img/our-works1.png);
-		
+.portf_flex_item1{background: url(../img/our-works1.png);
+
 }
-.portf_flex_item2:{background: url(../img/our-works2.png);
+.portf_flex_item2{background: url(../img/our-works2.png);
 }
-.portf_flex_item3:{background: url(../img/our-works3.png);
+.portf_flex_item3{background: url(../img/our-works3.png);
 }
-.portf_flex_item4:{background: url(../img/our-works4.png);
+.portf_flex_item4{background: url(../img/our-works4.png);
+	
 }
-.portf_flex_item5:{background: url(../img/our-works5.png);
+.portf_flex_item5{background: url(../img/our-works5.png);
 }
-.portf_flex_item6:{background: url(../img/our-works6.png);
+.portf_flex_item6{background: url(../img/our-works6.png);
 }
 
+.portf_item_hover{
+	display: none;
+	/*opacity: 0.9;/*
+	background: #f7600e;*/
+}
+.portf_flex_container div:hover .portf_item_hover{
+	display: block;
+	opacity: 0.9;
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	background-color: #f7600e;
+	color: #fff;
+	text-align: center;
+	transition: 1s ease;
+}
+.portf_h3{
+	font-size: 1.563em;
+	font-weight: 600;
+	line-height: 2.5em;
+	padding-top: 20%;
+}
+.portf_item_hover p{
+	font-size: 0.875em;
+	font-weight: 400;
+	line-height: 1.625em;
+	padding: 5% 7% 0;
+}
+.portf_show{
+	margin-top: 8%;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	color: #f7600e;
+	background: #fff;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 2.5em;
+	padding: 1% 7%;
+	cursor: pointer;
+}
+/*----------/Section Portfolio----------*/
 
-	/*----------/Section Portfolio----------*/
-
-	/*----------Header----------*/
+/*----------Header----------*/
 
 
-	/*---------- ----------*/
+/*---------- ----------*/
